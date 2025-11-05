@@ -161,3 +161,10 @@ Possibilidades
 **RSC**: Conteúdo markdown renderizado no servidor
 **Static Generation**: Build-time RSC
 **Search**: Client-side search com deferred values
+
+## Fontes
+
+https://www.youtube.com/watch?v=0ympFIwQFJw
+https://youtu.be/ZCuYPiUIONs
+https://raphamorim.io/entendendo-react-fiber/
+https://blog.logrocket.com/deep-dive-react-fiber/
