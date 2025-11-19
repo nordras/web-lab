@@ -2,6 +2,10 @@
   "/page": "app/page.js",
   "/css/container-queries/page": "app/css/container-queries/page.js",
   "/css/nesting/page": "app/css/nesting/page.js",
-  "/css/cascade-layers/page": "app/css/cascade-layers/page.js",
-  "/css/has-selector/page": "app/css/has-selector/page.js"
+  "/css/trigonometry/page": "app/css/trigonometry/page.js",
+  "/css/viewport-units/page": "app/css/viewport-units/page.js",
+  "/css/view-transitions/page": "app/css/view-transitions/page.js",
+  "/css/subgrid/page": "app/css/subgrid/page.js",
+  "/css/has-selector/page": "app/css/has-selector/page.js",
+  "/css/color-spaces/page": "app/css/color-spaces/page.js"
 }

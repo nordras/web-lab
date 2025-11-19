@@ -1,15 +1,15 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
     ],
     "/css/container-queries/page": [
       "static/chunks/webpack.js",
@@ -28,6 +28,42 @@
       "static/chunks/main-app.js",
       "static/css/app/css/has-selector/page.css",
       "static/chunks/app/css/has-selector/page.js"
+    ],
+    "/css/cascade-layers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/cascade-layers/page.css",
+      "static/chunks/app/css/cascade-layers/page.js"
+    ],
+    "/css/viewport-units/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/viewport-units/page.css",
+      "static/chunks/app/css/viewport-units/page.js"
+    ],
+    "/css/trigonometry/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/trigonometry/page.css",
+      "static/chunks/app/css/trigonometry/page.js"
+    ],
+    "/css/view-transitions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/view-transitions/page.css",
+      "static/chunks/app/css/view-transitions/page.js"
+    ],
+    "/css/subgrid/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/subgrid/page.css",
+      "static/chunks/app/css/subgrid/page.js"
+    ],
+    "/css/color-spaces/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/css/color-spaces/page.css",
+      "static/chunks/app/css/color-spaces/page.js"
     ]
   }
 }
