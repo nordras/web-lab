@@ -585,6 +585,9 @@ video {
 .grid {
   display: grid;
 }
+.border {
+  border-width: 1px;
+}
 
 * {
   margin: 0;
