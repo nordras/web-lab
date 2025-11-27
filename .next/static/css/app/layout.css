@@ -585,6 +585,9 @@ video {
 .grid {
   display: grid;
 }
+.w-full {
+  width: 100%;
+}
 .border {
   border-width: 1px;
 }
@@ -608,7 +611,7 @@ body {
 .main-content {
   margin-left: 260px;
   flex: 1;
-  padding: 2rem;
+  /* padding: 2rem; */
   display: flex;
   justify-content: center;
   align-items: center;

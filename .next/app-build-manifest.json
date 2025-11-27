@@ -11,41 +11,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/css/container-queries/page": [
+    "/css/2-subgrid/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/css/container-queries/page.css",
-      "static/chunks/app/css/container-queries/page.js"
-    ],
-    "/css/has-selector/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/css/has-selector/page.css",
-      "static/chunks/app/css/has-selector/page.js"
-    ],
-    "/css/nesting/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/css/nesting/page.css",
-      "static/chunks/app/css/nesting/page.js"
-    ],
-    "/css/subgrid/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/css/subgrid/page.css",
-      "static/chunks/app/css/subgrid/page.js"
-    ],
-    "/css/0-columns-masonry/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/css/0-columns-masonry/page.css",
-      "static/chunks/app/css/0-columns-masonry/page.js"
-    ],
-    "/css/1-border-image/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/css/1-border-image/page.css",
-      "static/chunks/app/css/1-border-image/page.js"
+      "static/css/app/css/2-subgrid/page.css",
+      "static/chunks/app/css/2-subgrid/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
