@@ -16,6 +16,11 @@
       "static/chunks/main-app.js",
       "static/css/app/css/2-subgrid/page.css",
       "static/chunks/app/css/2-subgrid/page.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }
