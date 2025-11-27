@@ -1,5 +1,4 @@
 {
-  "/not-found": "app/not-found.js",
-  "/page": "app/page.js",
-  "/css/2-subgrid/page": "app/css/2-subgrid/page.js"
+  "/css/2-subgrid/page": "app/css/2-subgrid/page.js",
+  "/page": "app/page.js"
 }
