@@ -2,10 +2,5 @@
   "/page": "app/page.js",
   "/css/2-subgrid/page": "app/css/2-subgrid/page.js",
   "/css/color-spaces/page": "app/css/color-spaces/page.js",
-  "/css/0-columns-masonry/page": "app/css/0-columns-masonry/page.js",
-  "/css/1-border-image/page": "app/css/1-border-image/page.js",
-  "/css/container-queries/page": "app/css/container-queries/page.js",
-  "/css/has-selector/page": "app/css/has-selector/page.js",
-  "/css/nesting/page": "app/css/nesting/page.js",
   "/css/cascade-layers/page": "app/css/cascade-layers/page.js"
 }

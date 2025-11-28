@@ -58,7 +58,7 @@ export default function ColorSpacesPage() {
               </tr>
               <tr className="hover:bg-purple-50 transition-colors">
                 <td className="px-6 py-3 text-sm text-gray-800 font-mono bg-gray-50">H</td>
-                <td className="px-6 py-3 text-sm text-gray-600">Hue</td>
+                <td className="px-6 py-3 text-sm text-gray-600">Hue (color angle 0-360°)</td>
               </tr>
               <tr className="hover:bg-blue-50 transition-colors">
                 <td rowSpan={3} className="px-6 py-3 font-bold text-blue-700 border-r border-gray-200 bg-blue-50/50">RGB</td>
