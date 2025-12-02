@@ -11,18 +11,26 @@
   background: #1a1a1a;
   border-radius: 12px;
   padding: 3rem 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .group {
   display: flex;
-  gap: 1.5rem;
-  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 5s infinite linear;
+  padding-right: 1em;
 }
 
 .card {
-  min-width: 150px;
-  min-height: 150px;
-  background: #2563eb;
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  background: cornflowerblue;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -35,5 +43,14 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

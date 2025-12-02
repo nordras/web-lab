@@ -29,10 +29,11 @@
       "static/css/app/css/3-infinite-carousel/page.css",
       "static/chunks/app/css/3-infinite-carousel/page.js"
     ],
-    "/not-found": [
+    "/css/0-columns-masonry/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/css/app/css/0-columns-masonry/page.css",
+      "static/chunks/app/css/0-columns-masonry/page.js"
     ]
   }
 }
