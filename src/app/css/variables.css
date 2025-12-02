@@ -1,0 +1,163 @@
+:root {
+  /* === GRAYSCALE COLORS === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* === DARK THEME COLORS === */
+  --color-dark-bg: #0f172a;
+  --color-dark-surface: #1e293b;
+  --color-dark-card: #1a1a1a;
+  --color-dark-text: #e2e8f0;
+  --color-dark-text-muted: #94a3b8;
+  --color-dark-border: #2c3e50;
+
+  /* === PRIMARY COLORS === */
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-cornflower: #6495ed;
+  
+  /* === GRADIENT COLORS === */
+  --color-purple-light: #667eea;
+  --color-purple-dark: #764ba2;
+  --color-blue-dark: #1e3c72;
+  --color-blue-medium: #2a5298;
+  --color-pink: #f093fb;
+  --color-red: #f5576c;
+  --color-orange: #fa709a;
+  --color-yellow: #fee140;
+  
+  /* === SEMANTIC COLORS === */
+  --color-success: #10b981;
+  --color-success-dark: #059669;
+  --color-error: #ef4444;
+  --color-error-bg: #fef2f2;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+
+  /* === SPECIAL COLORS === */
+  --color-gold: #ffd700;
+  --color-cyan: #0575e6;
+  --color-green: #00f260;
+  
+  /* === RAINBOW COLORS === */
+  --color-rainbow-red: #ff0000;
+  --color-rainbow-orange: #ff7f00;
+  --color-rainbow-yellow: #ffff00;
+  --color-rainbow-green: #00ff00;
+  --color-rainbow-blue: #0000ff;
+  --color-rainbow-indigo: #4b0082;
+  --color-rainbow-violet: #9400d3;
+
+  /* === GRADIENT BORDER COLORS === */
+  --color-gradient-blue-pink-start: #0066ff;
+  --color-gradient-blue-pink-end: #ff32d6;
+
+  /* === TRANSPARENT/OVERLAY COLORS === */
+  --color-transparent: transparent;
+  --color-overlay-black-10: rgba(0, 0, 0, 0.1);
+  --color-overlay-black-20: rgba(0, 0, 0, 0.2);
+  --color-overlay-black-30: rgba(0, 0, 0, 0.3);
+  --color-overlay-black-40: rgba(0, 0, 0, 0.4);
+  --color-overlay-black-80: rgba(0, 0, 0, 0.8);
+  
+  --color-overlay-white-10: rgba(255, 255, 255, 0.1);
+  --color-overlay-white-20: rgba(255, 255, 255, 0.2);
+  --color-overlay-white-90: rgba(255, 255, 255, 0.9);
+  --color-overlay-white-95: rgba(255, 255, 255, 0.95);
+
+  /* === TEXT COLORS === */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-light: #7f8c8d;
+  --color-text-white: #ffffff;
+  --color-text-code: #fbbf24;
+  --color-text-code-light: #3498db;
+  --color-text-muted: #ecf0f1;
+
+  /* === GRADIENTS === */
+  --gradient-purple: linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-purple-dark) 100%);
+  --gradient-blue: linear-gradient(135deg, var(--color-blue-dark) 0%, var(--color-blue-medium) 100%);
+  --gradient-pink-red: linear-gradient(to bottom, var(--color-pink) 0%, var(--color-red) 100%);
+  --gradient-orange-yellow: linear-gradient(45deg, var(--color-orange) 0%, var(--color-yellow) 100%);
+  --gradient-radial-purple: radial-gradient(circle, var(--color-purple-light), var(--color-purple-dark));
+  --gradient-border-blue-pink: linear-gradient(to right, var(--color-gradient-blue-pink-start), var(--color-gradient-blue-pink-end));
+  --gradient-rainbow: linear-gradient(
+    90deg,
+    var(--color-rainbow-red) 0%,
+    var(--color-rainbow-orange) 16.67%,
+    var(--color-rainbow-yellow) 33.33%,
+    var(--color-rainbow-green) 50%,
+    var(--color-rainbow-blue) 66.67%,
+    var(--color-rainbow-indigo) 83.33%,
+    var(--color-rainbow-violet) 100%
+  );
+  --gradient-green-cyan: linear-gradient(to right, var(--color-green), var(--color-transparent), var(--color-cyan));
+  --gradient-overlay: linear-gradient(
+    to top,
+    var(--color-overlay-black-80) 0%,
+    var(--color-overlay-black-40) 50%,
+    var(--color-transparent) 100%
+  );
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 2px 8px var(--color-overlay-black-10);
+  --shadow-md: 0 4px 6px var(--color-overlay-black-10);
+  --shadow-lg: 0 8px 16px var(--color-overlay-black-20);
+  --shadow-xl: 0 8px 16px var(--color-overlay-black-30);
+  --shadow-text: 2px 2px 4px var(--color-overlay-black-30);
+
+  /* === BORDER COLORS === */
+  --border-gray: #cccccc;
+  --border-light: #e5e7eb;
+  --border-white: var(--color-overlay-white-20);
+  --border-blue: var(--color-blue-500);
+
+  /* === BACKGROUND COLORS === */
+  --bg-glass: var(--color-overlay-white-10);
+  --bg-code: var(--color-overlay-black-30);
+  --bg-error: var(--color-error-bg);
+  --bg-card: var(--color-white);
+  --bg-dark: var(--color-dark-bg);
+  --bg-surface: var(--color-dark-surface);
+
+  /* === SPACING === */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* === BORDER RADIUS === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 50%;
+
+  /* === TRANSITIONS === */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* === FONT SIZES === */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
+}
