@@ -18,23 +18,23 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  & img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-.card h3 {
-  padding: 1rem;
-  margin: 0;
-  font-size: 1.25rem;
-}
+  & h3 {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.25rem;
+  }
 
-.card p {
-  padding: 0 1rem 1rem;
-  color: #666;
+  & p {
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
 }
 
 @container cardgrid (min-width: 400px) {

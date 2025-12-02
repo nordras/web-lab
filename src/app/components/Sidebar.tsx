@@ -9,6 +9,7 @@ const menuItems = [
   { href: '/css/0-columns-masonry', label: '0. Columns Masonry' },
   { href: '/css/1-border-image', label: '1. Border Image Gradient' },
   { href: '/css/2-subgrid', label: '2. Subgrid' },
+  { href: '/css/3-infinite-carousel', label: '3. Infinite Carousel' },
   { href: '/css/container-queries', label: 'Container Queries' },
   { href: '/css/has-selector', label: ':has() Selector' },
   { href: '/css/nesting', label: 'CSS Nesting' },

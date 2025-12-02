@@ -23,20 +23,20 @@
   justify-content: center;
   font-weight: bold;
   font-size: 1.25rem;
-}
 
-.color-box span {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
+  & span {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
 
-.color-box.oklch {
-  background: oklch(65% 0.25 var(--hue, 250));
-}
+  &.oklch {
+    background: oklch(65% 0.25 var(--hue, 250));
+  }
 
-.color-box.rgb {
-  background: hsl(var(--hue, 250), 70%, 50%);
+  &.rgb {
+    background: hsl(var(--hue, 250), 70%, 50%);
+  }
 }
 
 input[type="range"] {

@@ -1,0 +1,39 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 3rem 0;
+}
+
+.group {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.card {
+  min-width: 150px;
+  min-height: 150px;
+  background: #2563eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

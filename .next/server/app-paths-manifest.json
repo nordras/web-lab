@@ -1,3 +1,7 @@
 {
-  "/css/viewport-units/page": "app/css/viewport-units/page.js"
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/css/2-subgrid/page": "app/css/2-subgrid/page.js",
+  "/css/1-border-image/page": "app/css/1-border-image/page.js",
+  "/css/3-infinite-carousel/page": "app/css/3-infinite-carousel/page.js"
 }

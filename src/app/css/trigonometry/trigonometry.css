@@ -38,12 +38,12 @@
     rotate(calc(-1 * var(--angle)));
   
   transition: transform 0.3s ease;
-}
 
-.circle-item:hover {
-  transform: 
-    rotate(var(--angle)) 
-    translateY(calc(-1 * var(--distance) - 10px)) 
-    rotate(calc(-1 * var(--angle)))
-    scale(1.2);
+  &:hover {
+    transform: 
+      rotate(var(--angle)) 
+      translateY(calc(-1 * var(--distance) - 10px)) 
+      rotate(calc(-1 * var(--angle)))
+      scale(1.2);
+  }
 }

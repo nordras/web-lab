@@ -22,24 +22,24 @@
   background: #6b7280;
   color: white;
   transition: all 0.2s ease;
-}
 
-.btn:hover {
-  background: #4b5563;
+  &:hover {
+    background: #4b5563;
+  }
 }
 
 .component-style {
   background: #3b82f6;
-}
 
-.component-style:hover {
-  background: #2563eb;
+  &:hover {
+    background: #2563eb;
+  }
 }
 
 .utility-override {
   background: #10b981;
-}
 
-.utility-override:hover {
-  background: #059669;
+  &:hover {
+    background: #059669;
+  }
 }
