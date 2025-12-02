@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import './view-transitions.scss'
+import './view-transitions.css'
 
 export default function ViewTransitionsPage() {
   const [view, setView] = useState<'grid' | 'list'>('grid')

@@ -1,4 +1,4 @@
-import './viewport-units.scss'
+import './viewport-units.css'
 
 export default function ViewportUnitsPage() {
   return (

@@ -1,4 +1,4 @@
-import './columns-masonry.scss'
+import './columns-masonry.css'
 
 export default function ColumnsMasonryPage() {  
   const images = [

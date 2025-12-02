@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import './trigonometry.scss'
+import './trigonometry.css'
 
 export default function TrigonometryPage() {
   const [count] = useState(8)

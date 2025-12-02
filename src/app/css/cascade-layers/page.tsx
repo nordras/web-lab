@@ -1,4 +1,4 @@
-import './cascade-layers.scss'
+import './cascade-layers.css'
 
 export default function CascadeLayersPage() {
   return (

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import './has-selector.scss'
+import './has-selector.css'
 
 export default function HasSelectorPage() {
   const [hasError, setHasError] = useState(false)

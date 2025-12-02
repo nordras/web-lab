@@ -1,4 +1,4 @@
-import './container-queries.scss'
+import './container-queries.css'
 
 export default function ContainerQueriesPage() {
   return (

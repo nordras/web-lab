@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import './color-spaces.scss'
+import './color-spaces.css'
 
 export default function ColorSpacesPage() {
   const [hue, setHue] = useState(250)

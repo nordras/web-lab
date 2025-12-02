@@ -1,4 +1,4 @@
-import './nesting.scss'
+import './nesting.css'
 
 export default function NestingPage() {
   return (

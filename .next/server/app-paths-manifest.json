@@ -1,6 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/css/2-subgrid/page": "app/css/2-subgrid/page.js",
-  "/css/color-spaces/page": "app/css/color-spaces/page.js",
-  "/css/cascade-layers/page": "app/css/cascade-layers/page.js"
+  "/css/viewport-units/page": "app/css/viewport-units/page.js"
 }

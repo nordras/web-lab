@@ -1,4 +1,4 @@
-import './border-image.scss'
+import './border-image.css'
 
 export default function BorderImagePage() {
   return (

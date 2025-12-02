@@ -1,4 +1,4 @@
-import './subgrid.scss'
+import './subgrid.css'
 
 export default function SubgridPage() {
   const items = [
