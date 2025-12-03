@@ -87,62 +87,62 @@
     }
 
     & .masonry-item {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    background: var(--color-white);
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s ease;
-    position: relative;
-    cursor: pointer;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      background: var(--color-white);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
 
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
 
-      & .item-overlay {
-        opacity: 1;
+        & .item-overlay {
+          opacity: 1;
+        }
+
+        & img {
+          transform: scale(1.05);
+        }
       }
 
       & img {
-        transform: scale(1.05);
-      }
-    }
-
-    & img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-
-    & .item-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: var(--gradient-overlay);
-      color: var(--color-white);
-      padding: 1.5rem 1rem 1rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-
-      & h3 {
-        margin: 0 0 0.3rem 0;
-        font-size: 1.2rem;
-        text-transform: capitalize;
-        font-weight: 600;
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
       }
 
-      & p {
-        margin: 0;
-        font-size: 0.85rem;
-        opacity: 0.9;
+      & .item-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--gradient-overlay);
+        color: var(--color-white);
+        padding: 1.5rem 1rem 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        & h3 {
+          margin: 0 0 0.3rem 0;
+          font-size: 1.2rem;
+          text-transform: capitalize;
+          font-weight: 600;
+        }
+
+        & p {
+          margin: 0;
+          font-size: 0.85rem;
+          opacity: 0.9;
+        }
       }
     }
-  }
   }
 }
 
@@ -151,6 +151,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
