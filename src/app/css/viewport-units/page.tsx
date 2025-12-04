@@ -1,18 +1,18 @@
-import './viewport-units.css'
+import styles from './viewport-units.module.css'
 
 export default function ViewportUnitsPage() {
   return (
-    <div className="demo-container">
-      <div className="viewport-demo">
-        <div className="box vh">
+    <div className={styles['demo-container']}>
+      <div className={styles['viewport-demo']}>
+        <div className={`${styles.box vh}`}>
           <span>100vh</span>
           <small>Traditional</small>
         </div>
-        <div className="box dvh">
+        <div className={`${styles.box dvh}`}>
           <span>100dvh</span>
           <small>Dynamic</small>
         </div>
-        <div className="box svh">
+        <div className={`${styles.box svh}`}>
           <span>100svh</span>
           <small>Small</small>
         </div>
@@ -20,3 +20,5 @@ export default function ViewportUnitsPage() {
     </div>
   )
 }
+
+

@@ -1,18 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import './trigonometry.css'
+import styles from './trigonometry.module.css'
 
 export default function TrigonometryPage() {
   const [count] = useState(8)
 
   return (
-    <div className="demo-container">
-      <div className="circle-container">
+    <div className={styles['demo-container']}>
+      <div className={styles['circle-container']}>
         {Array.from({ length: count }).map((_, i) => (
           <div 
             key={i} 
-            className="circle-item"
+            className={styles['circle-item']}
             style={{ 
               '--index': i,
               '--total': count 
@@ -25,3 +25,5 @@ export default function TrigonometryPage() {
     </div>
   )
 }
+
+

@@ -1,4 +1,4 @@
-import './columns-masonry.css'
+import styles from './columns-masonry.module.css'
 
 export default function ColumnsMasonryPage() {  
   const images = [
@@ -17,16 +17,16 @@ export default function ColumnsMasonryPage() {
   ]
 
   return (
-    <div className="masonry-demo">
-      <div className="masonry-container">
+    <div className={styles['masonry-demo']}>
+      <div className={styles['masonry-container']}>
         {images.map((img) => (
-          <div key={img.id} className="masonry-item">
+          <div key={img.id} className={styles['masonry-item']}>
             <img
               src={`https://picsum.photos/seed/${img.keyword}-${img.id}/${img.width}/${img.height}`}
               alt={`${img.keyword} ${img.id}`}
               loading="lazy"
             />
-            <div className="item-overlay">
+            <div className={styles['item-overlay']}>
               <h3>{img.keyword}</h3>
               <p>{img.width} × {img.height}</p>
             </div>

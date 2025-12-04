@@ -1,10 +1,10 @@
-import './infinite-carousel.css'
+import styles from './infinite-carousel.module.css'
 
 export default function InfiniteCarouselPage() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
-    <div className="carousel-container">
+    <div className={styles['carousel-container']}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2.5rem' }}>
         Infinite Carousel - Pure CSS
       </h1>
@@ -12,19 +12,19 @@ export default function InfiniteCarouselPage() {
         Hover to pause • Smooth infinite loop animation
       </p>
       
-      <div className="carousel">
-        <div className="carousel-track">
-          <div className="group">
+      <div className={styles.carousel}>
+        <div className={styles['carousel-track']}>
+          <div className={styles['carousel-group']}>
             {cards.map((num) => (
-              <div key={`first-${num}`} className="card">
+              <div key={`first-${num}`} className={styles['carousel-card']}>
                 {num}
               </div>
             ))}
           </div>
           {/* Duplicate for seamless loop */}
-          <div className="group" aria-hidden="true">
+          <div className={styles['carousel-group']} aria-hidden="true">
             {cards.map((num) => (
-              <div key={`second-${num}`} className="card">
+              <div key={`second-${num}`} className={styles['carousel-card']}>
                 {num}
               </div>
             ))}
@@ -45,3 +45,4 @@ export default function InfiniteCarouselPage() {
     </div>
   )
 }
+

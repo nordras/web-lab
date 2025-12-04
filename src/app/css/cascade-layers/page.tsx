@@ -1,13 +1,15 @@
-import './cascade-layers.css'
+import styles from './cascade-layers.module.css'
 
 export default function CascadeLayersPage() {
   return (
-    <div className="demo-container">
-      <div className="layer-demo">
-        <button className="btn base-style">Base Layer</button>
-        <button className="btn component-style">Component Layer</button>
-        <button className="btn utility-override">Utility Layer</button>
+    <div className={styles['demo-container']}>
+      <div className={styles['layer-demo']}>
+        <button className={`${styles.btn base-style}`}>Base Layer</button>
+        <button className={`${styles.btn component-style}`}>Component Layer</button>
+        <button className={`${styles.btn utility-override}`}>Utility Layer</button>
       </div>
     </div>
   )
 }
+
+

@@ -1,8 +1,8 @@
-import './border-image.css'
+import styles from './border-image.module.css'
 
 export default function BorderImagePage() {
   return (
-    <section className="border-image-demo">
+    <section className={styles['border-image-demo']}>
       <div className="demo-header">
         <h1>CSS Border Image as Gradient</h1>
       </div>
