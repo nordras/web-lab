@@ -5,10 +5,10 @@ export default function InfiniteCarouselPage() {
 
   return (
     <div className={styles['carousel-container']}>
-      <h1 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2.5rem' }}>
+      <h1 className={styles['page-title']}>
         Infinite Carousel - Pure CSS
       </h1>
-      <p style={{ textAlign: 'center', marginBottom: '3rem', color: '#666' }}>
+      <p className={styles['page-subtitle']}>
         Hover to pause • Smooth infinite loop animation
       </p>
       
@@ -32,9 +32,9 @@ export default function InfiniteCarouselPage() {
         </div>
       </div>
 
-      <div style={{ marginTop: '3rem', padding: '2rem', background: 'white', borderRadius: '12px', maxWidth: '800px', margin: '3rem auto' }}>
-        <h2 style={{ marginBottom: '1rem' }}>🎯 Como funciona</h2>
-        <ul style={{ lineHeight: '1.8', color: '#555' }}>
+      <div className={styles['info-section']}>
+        <h2 className={styles['info-title']}>🎯 Como funciona</h2>
+        <ul className={styles['info-list']}>
           <li><strong>Duplicação:</strong> Os cards são duplicados para criar um loop contínuo</li>
           <li><strong>Animação:</strong> A track se move continuamente da direita para a esquerda</li>
           <li><strong>Reset invisível:</strong> Quando o primeiro grupo sai, o segundo está na posição exata</li>
