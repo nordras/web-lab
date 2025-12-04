@@ -10,7 +10,7 @@ export default function NestingPage() {
         <div className={styles['card-body']}>
           <p>Native CSS nesting without preprocessors</p>
           <button className={styles.btn}>Primary</button>
-          <button className={`${styles.btn secondary}`}>Secondary</button>
+          <button className={`${styles.btn} ${styles.secondary}`}>Secondary</button>
         </div>
       </div>
     </div>

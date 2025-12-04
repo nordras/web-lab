@@ -20,39 +20,39 @@
   padding: 2rem;
   min-height: 200px;
   position: relative;
+}
 
-  & span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
+.box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
 
-  & small {
-    color: #666;
-    font-size: 0.875rem;
-  }
+.box small {
+  color: #666;
+  font-size: 0.875rem;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 4px;
-    border-radius: 2px;
-  }
+.box::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+}
 
-  &.vh::after {
-    background: #ef4444;
-  }
+.vh::after {
+  background: #ef4444;
+}
 
-  &.dvh::after {
-    background: #3b82f6;
-  }
+.dvh::after {
+  background: #3b82f6;
+}
 
-  &.svh::after {
-    background: #10b981;
-  }
+.svh::after {
+  background: #10b981;
 }

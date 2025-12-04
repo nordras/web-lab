@@ -12,27 +12,27 @@
   border-radius: var(--radius-lg);
   padding: var(--spacing-3xl) 0;
   position: relative;
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
 
-  &::before {
-    left: 0;
-    background: linear-gradient(to right, var(--color-dark-card), transparent);
-  }
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-dark-card), transparent);
+}
 
-  &::after {
-    right: 0;
-    background: linear-gradient(to left, var(--color-dark-card), transparent);
-  }
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-dark-card), transparent);
 }
 
 .carousel-track {
@@ -120,23 +120,23 @@
   color: var(--color-text-secondary);
   list-style: none;
   padding: 0;
-  
-  & li {
-    margin-bottom: var(--spacing-sm);
-    padding-left: var(--spacing-lg);
-    position: relative;
-    
-    &::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--color-blue-500);
-      font-weight: bold;
-    }
-    
-    & strong {
-      color: var(--color-text-primary);
-      font-weight: 600;
-    }
-  }
+}
+
+.info-list li {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+  position: relative;
+}
+
+.info-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-blue-500);
+  font-weight: bold;
+}
+
+.info-list li strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
 }

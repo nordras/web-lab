@@ -3,11 +3,11 @@ import styles from './subgrid.module.css'
 export default function SubgridPage() {
   return (
     <div className={`${styles['subgrid-demo']} w-full`}>
-      <h1>CSS Subgrid</h1>
-      <p>Alinhe itens de grid aninhados com o grid pai</p>
+      <h1 className={styles.title}>CSS Subgrid</h1>
+      <p className={styles.description}>Alinhe itens de grid aninhados com o grid pai</p>
 
       <section className={styles.example}>
-        <h2>Sem Subgrid (Desalinhado)</h2>
+        <h2 className={styles['example-title']}>Sem Subgrid (Desalinhado)</h2>
         <div className={styles['grid-container']}>
           <div className={styles['subgrid-card']}>
             <h3>Lorem Ipsum Dolor</h3>
@@ -28,7 +28,7 @@ export default function SubgridPage() {
       </section>
 
       <section className={styles.example}>
-        <h2>Com Subgrid (Alinhado)</h2>
+        <h2 className={styles['example-title']}>Com Subgrid (Alinhado)</h2>
         <div className={`${styles['grid-container']} ${styles['with-subgrid']}`}>
           <div className={styles['subgrid-card']}>
             <h3>Lorem Ipsum Dolor</h3>
@@ -49,7 +49,7 @@ export default function SubgridPage() {
       </section>
 
       <section className={styles.info}>
-        <h2>Como funciona?</h2>
+        <h2 className={styles['info-title']}>Como funciona?</h2>
         <div className={styles['info-grid']}>
           <div className={styles['info-card']}>
             <h3>Sem Subgrid</h3>

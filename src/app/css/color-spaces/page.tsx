@@ -7,16 +7,16 @@ export default function ColorSpacesPage() {
   const [hue, setHue] = useState(250)
 
   return (
-    <div className="demo-container">
-      <div className="color-demo">
+    <div className={styles['demo-container']}>
+      <div className={styles['color-demo']}>
         <div 
-          className="color-box oklch"
+          className={`${styles['color-box']} ${styles.oklch}`}
           style={{ '--hue': hue } as React.CSSProperties}
         >
           <span>OKLCH</span>
         </div>
         <div 
-          className="color-box rgb"
+          className={`${styles['color-box']} ${styles.rgb}`}
           style={{ '--hue': hue } as React.CSSProperties}
         >
           <span>RGB</span>
