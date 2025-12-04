@@ -21,14 +21,16 @@ export default function ColorSpacesPage() {
         >
           <span>RGB</span>
         </div>
-        <input 
-          type="range" 
-          min="0" 
-          max="360" 
-          value={hue}
-          onChange={(e) => setHue(Number(e.target.value))}
-        />
-        <p>Hue: {hue}°</p>
+        <div className={styles.slider}>
+          <input 
+            type="range" 
+            min="0" 
+            max="360" 
+            value={hue}
+            onChange={(e) => setHue(Number(e.target.value))}
+          />
+        </div>
+        <p className={styles['hue-label']}>Hue: {hue}°</p>
       </div>
 
       <div className="mt-8 p-6 bg-white rounded-lg border border-gray-200 shadow-lg">

@@ -6,19 +6,19 @@ import './Sidebar.scss'
 
 const menuItems = [
   { href: '/', label: 'Home' },
-  { href: '/css/0-columns-masonry', label: '0. Columns Masonry' },
-  { href: '/css/1-border-image', label: '1. Border Image Gradient' },
-  { href: '/css/2-subgrid', label: '2. Subgrid' },
-  { href: '/css/3-infinite-carousel', label: '3. Infinite Carousel' },
-  { href: '/css/container-queries', label: 'Container Queries' },
-  { href: '/css/has-selector', label: ':has() Selector' },
-  { href: '/css/nesting', label: 'CSS Nesting' },
-  { href: '/css/cascade-layers', label: 'Cascade Layers' },
-  { href: '/css/color-spaces', label: 'Color Spaces' },
-  { href: '/css/subgrid', label: 'Subgrid' },
-  { href: '/css/view-transitions', label: 'View Transitions' },
-  { href: '/css/trigonometry', label: 'Trigonometry' },
-  { href: '/css/viewport-units', label: 'Viewport Units' },
+  { href: '/css-components/0-columns-masonry', label: '0. Columns Masonry' },
+  { href: '/css-components/1-border-image', label: '1. Border Image Gradient' },
+  { href: '/css-components/2-subgrid', label: '2. Subgrid' },
+  { href: '/css-components/3-infinite-carousel', label: '3. Infinite Carousel' },
+  { href: '/css-components/container-queries', label: 'Container Queries' },
+  { href: '/css-components/has-selector', label: ':has() Selector' },
+  { href: '/css-components/nesting', label: 'CSS Nesting' },
+  { href: '/css-components/cascade-layers', label: 'Cascade Layers' },
+  { href: '/css-components/color-spaces', label: 'Color Spaces' },
+  { href: '/css-components/subgrid', label: 'Subgrid' },
+  { href: '/css-components/view-transitions', label: 'View Transitions' },
+  { href: '/css-components/trigonometry', label: 'Trigonometry' },
+  { href: '/css-components/viewport-units', label: 'Viewport Units' },
 ]
 
 export default function Sidebar() {
