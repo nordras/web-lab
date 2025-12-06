@@ -45,16 +45,6 @@ const menuSections: MenuSection[] = [
       { href: '/fibers/concurrent-features', label: 'Concurrent Features' },
     ]
   },
-  {
-    title: 'Server Components',
-    icon: '🖥️',
-    items: [
-      { href: '/server-components/basic-example', label: 'Basic Example' },
-      { href: '/server-components/zero-bundle', label: 'Zero Bundle Demo' },
-      { href: '/server-components/data-fetching', label: 'Data Fetching' },
-      { href: '/server-components/streaming', label: 'Streaming & Suspense' },
-    ]
-  }
 ]
 
 export default function Sidebar() {
