@@ -3,7 +3,7 @@ import styles from './viewport-units.module.css'
 export default function ViewportUnitsPage() {
   return (
     <div className={styles['demo-container']}>
-      <h2 className={styles.title}>Novas Unidades de Viewport</h2>
+      <h2 className={styles.title}>Unidades de Viewport</h2>
       
       <div className={styles['viewport-demo']}>
         <div className={`${styles.box} ${styles.vh}`}>
