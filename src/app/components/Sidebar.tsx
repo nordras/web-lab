@@ -36,6 +36,13 @@ const menuSections: MenuSection[] = [
       { href: '/css-components/trigonometry', label: 'Trigonometry' },
     ]
   },
+  {
+    title: 'React Fibers',
+    icon: 'atom',
+    items: [
+      { href: '/fibers/performance-measurement', label: 'Performance Measurement' },
+    ]
+  },
 ]
 
 export default function Sidebar() {

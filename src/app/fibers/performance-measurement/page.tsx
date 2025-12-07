@@ -1,6 +1,6 @@
 'use client'
 
-import { Profiler, useState, useEffect, ProfilerOnRenderCallback } from 'react'
+import { Profiler, useState, useCallback, ProfilerOnRenderCallback } from 'react'
 import { Activity, Clock, Zap, AlertTriangle, TrendingDown, BarChart3 } from 'lucide-react'
 import HeavyComponent from './components/HeavyComponent'
 import PerformanceMetrics from './components/PerformanceMetrics'
@@ -16,7 +16,7 @@ export default function PerformanceMeasurementPage() {
     commitTime: 0
   })
 
-  const handleRender: ProfilerOnRenderCallback = (
+  const handleRender: ProfilerOnRenderCallback = useCallback((
     id,
     phase,
     actualDuration,
@@ -24,13 +24,16 @@ export default function PerformanceMeasurementPage() {
     startTime,
     commitTime
   ) => {
-    setRenderMetrics({
-      actualDuration,
-      baseDuration,
-      startTime,
-      commitTime
-    })
-  }
+    // Só atualiza se for uma fase de mount ou update real
+    if (phase === 'mount' || phase === 'update') {
+      setRenderMetrics(prev => ({
+        actualDuration,
+        baseDuration,
+        startTime,
+        commitTime
+      }))
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
