@@ -3,8 +3,8 @@ import './globals.css'
 import Sidebar from './components/Sidebar'
 
 export const metadata = {
-  title: 'React Fibers & Server Components POC',
-  description: 'Studying React Fibers architecture and React Server Components',
+  title: 'Web Lab',
+  description: 'A web development laboratory for experimenting web features.',
 }
 
 export default function RootLayout({

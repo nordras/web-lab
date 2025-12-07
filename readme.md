@@ -1,10 +1,10 @@
-# React Fibers & Server Components POC
+# Web Lab
 
-A Proof of Concept project exploring React Fibers architecture, React Server Components, and modern CSS features.
+A web development laboratory exploring React Fibers architecture, React Server Components, and modern CSS features.
 
 ## Live Demo
 
-🔗 [View Project](https://poc-react-fiber-and-server.vercel.app/css/0-columns-masonry)
+🔗 [View Project](https://web-lab.vercel.app)
 
 ## What's Inside
 

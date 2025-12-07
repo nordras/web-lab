@@ -74,8 +74,8 @@ export default function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar-header">
         <Link href="/" className="sidebar-logo">
-          <h1>POC React</h1>
-          <span className="sidebar-subtitle">Fibers & Server Components</span>
+          <h1>Web Lab</h1>
+          <span className="sidebar-subtitle">React & CSS Experiments</span>
         </Link>
       </div>
       
