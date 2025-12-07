@@ -4,14 +4,14 @@
 }
 
 .card {
-  background: white;
+  background: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
 
   & .card-header {
-    background: #3b82f6;
-    color: white;
+    background: var(--color-blue-500);
+    color: var(--color-white);
     padding: 1.5rem;
 
     & h3 {
@@ -25,30 +25,30 @@
 
     & p {
       margin: 0 0 1.5rem;
-      color: #666;
+      color: var(--color-text-secondary);
     }
 
     & .btn {
       padding: 0.75rem 1.5rem;
       border: none;
       border-radius: 4px;
-      background: #3b82f6;
-      color: white;
+      background: var(--color-blue-500);
+      color: var(--color-white);
       font-size: 1rem;
       cursor: pointer;
       margin-right: 0.5rem;
       transition: all 0.2s ease;
 
       &:hover {
-        background: #2563eb;
+        background: var(--color-blue-600);
         transform: translateY(-2px);
       }
 
       &.secondary {
-        background: #6b7280;
+        background: var(--color-gray-500);
 
         &:hover {
-          background: #4b5563;
+          background: var(--color-gray-600);
         }
       }
     }
