@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { Palette, Atom, Server, ChevronDown, ChevronRight } from 'lucide-react'
 import './Sidebar.scss'
 
 interface MenuItem {
@@ -19,7 +20,7 @@ interface MenuSection {
 const menuSections: MenuSection[] = [
   {
     title: 'CSS Modern Features',
-    icon: '🎨',
+    icon: 'palette',
     items: [
       { href: '/css-components/0-columns-masonry', label: '0. Columns Masonry' },
       { href: '/css-components/1-border-image', label: '1. Border Image Gradient' },
@@ -37,7 +38,7 @@ const menuSections: MenuSection[] = [
   },
   {
     title: 'React Fibers',
-    icon: '⚛️',
+    icon: 'atom',
     items: [
       { href: '/fibers/stack-vs-fiber', label: 'Stack vs Fiber' },
       { href: '/fibers/time-slicing', label: 'Time Slicing' },
@@ -94,10 +95,16 @@ export default function Sidebar() {
                 className={`section-header ${isExpanded ? 'expanded' : ''}`}
                 onClick={() => toggleSection(section.title)}
               >
-                <span className="section-icon">{section.icon}</span>
+                <span className="section-icon">
+                  {section.icon === 'palette' && <Palette size={18} />}
+                  {section.icon === 'atom' && <Atom size={18} />}
+                  {section.icon === 'server' && <Server size={18} />}
+                </span>
                 <span className="section-title">{section.title}</span>
                 <span className="section-count">{section.items.length}</span>
-                <span className="section-arrow">{isExpanded ? '▼' : '▶'}</span>
+                <span className="section-arrow">
+                  {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+                </span>
               </button>
 
               {isExpanded && (

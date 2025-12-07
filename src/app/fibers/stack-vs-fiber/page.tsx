@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { Play, Pause, Circle, CheckCircle2 } from 'lucide-react'
 import DemoStack from './components/DemoStack'
 import DemoFiber from './components/DemoFiber'
 import PerformanceMetrics from './components/PerformanceMetrics'
@@ -63,7 +64,17 @@ export default function StackVsFiberPage() {
           className={styles.renderButton}
           onClick={() => setIsRendering(!isRendering)}
         >
-          {isRendering ? '⏸️ Pausar' : '▶️ Iniciar Renderização'}
+          {isRendering ? (
+            <>
+              <Pause size={20} />
+              <span>Pausar</span>
+            </>
+          ) : (
+            <>
+              <Play size={20} />
+              <span>Iniciar Renderização</span>
+            </>
+          )}
         </button>
       </div>
 
@@ -99,7 +110,10 @@ export default function StackVsFiberPage() {
         <h3>Como Funcionam</h3>
         <div className={styles.explanationGrid}>
           <div className={styles.explanationCard}>
-            <h4>🔴 Stack (Antigo)</h4>
+            <h4>
+              <Circle className="inline-block" size={16} fill="currentColor" />
+              {' '}Stack (Antigo)
+            </h4>
             <ul>
               <li>Renderização síncrona e bloqueante</li>
               <li>Processa tudo de uma vez</li>
@@ -111,7 +125,10 @@ export default function StackVsFiberPage() {
           </div>
 
           <div className={styles.explanationCard}>
-            <h4>🟢 Fiber (Atual)</h4>
+            <h4>
+              <CheckCircle2 className="inline-block" size={16} fill="currentColor" />
+              {' '}Fiber (Atual)
+            </h4>
             <ul>
               <li>Renderização incremental e interruptível</li>
               <li>Divide trabalho em pequenas unidades</li>
