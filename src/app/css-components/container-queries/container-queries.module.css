@@ -8,16 +8,16 @@
   container-name: cardgrid;
   resize: horizontal;
   overflow: auto;
-  border: 2px dashed #ccc;
+  border: 2px dashed var(--border-gray);
   padding: 2rem;
   min-width: 250px;
 }
 
 .card {
-  background: white;
+  background: var(--color-white);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 
   & img {
     width: 100%;
@@ -33,7 +33,7 @@
 
   & p {
     padding: 0 1rem 1rem;
-    color: #666;
+    color: var(--color-text-secondary);
   }
 }
 
