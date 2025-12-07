@@ -4,17 +4,17 @@
 }
 
 .demo-form {
-  background: white;
+  background: var(--color-white);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid transparent;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--color-transparent);
   transition: all 0.3s ease;
 }
 
 .demo-form:has(.error) {
-  border-color: #ef4444;
-  background: #fef2f2;
+  border-color: var(--color-error);
+  background: var(--bg-error);
 }
 
 .form-group {
@@ -28,20 +28,20 @@
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #333;
+    color: var(--color-text-primary);
   }
 
   & input {
     width: 100%;
     padding: 0.75rem;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--border-light);
     border-radius: 4px;
     font-size: 1rem;
     transition: border-color 0.2s ease;
 
     &:focus {
       outline: none;
-      border-color: #3b82f6;
+      border-color: var(--color-blue-500);
     }
   }
 }
@@ -49,6 +49,6 @@
 .error {
   display: block;
   margin-top: 0.5rem;
-  color: #ef4444;
+  color: var(--color-error);
   font-size: 0.875rem;
 }
