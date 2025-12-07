@@ -4,10 +4,10 @@
 }
 
 .color-demo {
-  background: white;
+  background: var(--color-white);
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -25,7 +25,7 @@
   font-size: 1.25rem;
 
   & span {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-overlay-white-90);
     padding: 0.5rem 1rem;
     border-radius: 4px;
   }
@@ -49,5 +49,5 @@
 .hue-label {
   margin: 0;
   font-weight: 500;
-  color: #333;
+  color: var(--color-text-primary);
 }
