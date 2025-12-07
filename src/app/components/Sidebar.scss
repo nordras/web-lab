@@ -4,47 +4,47 @@
   top: 0;
   width: 280px;
   height: 100vh;
-  background: #1a1a1a;
-  color: white;
+  background: var(--color-dark-card);
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  scrollbar-color: var(--color-overlay-white-20) var(--color-transparent);
 
   &::-webkit-scrollbar {
     width: 6px;
   }
 
   &::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--color-transparent);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--color-overlay-white-20);
     border-radius: 3px;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: var(--color-overlay-white-30);
     }
   }
 }
 
 .sidebar-header {
   padding: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--color-overlay-white-10);
 }
 
 .sidebar-logo {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
   display: block;
 
   h1 {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0 0.25rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--gradient-purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -53,7 +53,7 @@
 
 .sidebar-subtitle {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-overlay-white-50);
   font-weight: 400;
 }
 
@@ -74,9 +74,9 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.875rem 1rem;
-  background: transparent;
+  background: var(--color-transparent);
   border: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-overlay-white-90);
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.875rem;
@@ -84,17 +84,25 @@
   text-align: left;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--color-overlay-white-05);
   }
 
   &.expanded {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--color-overlay-white-05);
   }
 }
 
 .section-icon {
-  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  color: var(--color-overlay-white-80);
+  
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .section-title {
@@ -105,15 +113,22 @@
 .section-count {
   font-size: 0.75rem;
   padding: 0.125rem 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-overlay-white-10);
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-overlay-white-70);
 }
 
 .section-arrow {
-  font-size: 0.625rem;
-  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-overlay-white-50);
   transition: transform 0.2s ease;
+  
+  svg {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .section-items {
@@ -123,22 +138,22 @@
 
   a {
     padding: 0.625rem 1rem 0.625rem 3rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-overlay-white-70);
     text-decoration: none;
     transition: all 0.2s ease;
-    border-left: 3px solid transparent;
+    border-left: 3px solid var(--color-transparent);
     font-size: 0.875rem;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.05);
-      color: white;
+      background: var(--color-overlay-white-05);
+      color: var(--color-white);
       padding-left: 3.25rem;
     }
 
     &.active {
-      background: rgba(59, 130, 246, 0.15);
-      color: #60a5fa;
-      border-left-color: #3b82f6;
+      background: var(--color-overlay-blue-15);
+      color: var(--color-blue-400);
+      border-left-color: var(--color-blue-500);
       font-weight: 500;
     }
   }
@@ -150,19 +165,19 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1rem 0.625rem 3rem;
-  background: transparent;
+  background: var(--color-transparent);
   border: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-overlay-white-50);
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.875rem;
   text-align: left;
-  border-left: 3px solid transparent;
+  border-left: 3px solid var(--color-transparent);
   margin-top: 0.25rem;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.7);
+    background: var(--color-overlay-white-05);
+    color: var(--color-overlay-white-70);
     padding-left: 3.25rem;
   }
 

@@ -36,17 +36,6 @@ const menuSections: MenuSection[] = [
       { href: '/css-components/trigonometry', label: 'Trigonometry' },
     ]
   },
-  {
-    title: 'React Fibers',
-    icon: 'atom',
-    items: [
-      { href: '/fibers/performance-measurement', label: 'Performance Measurement' },
-      { href: '/fibers/stack-vs-fiber', label: 'Stack vs Fiber' },
-      { href: '/fibers/time-slicing', label: 'Time Slicing' },
-      { href: '/fibers/priority-queues', label: 'Priority Queues' },
-      { href: '/fibers/concurrent-features', label: 'Concurrent Features' },
-    ]
-  },
 ]
 
 export default function Sidebar() {
