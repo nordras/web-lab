@@ -40,6 +40,7 @@ const menuSections: MenuSection[] = [
     title: 'React Fibers',
     icon: 'atom',
     items: [
+      { href: '/fibers/performance-measurement', label: 'Performance Measurement' },
       { href: '/fibers/stack-vs-fiber', label: 'Stack vs Fiber' },
       { href: '/fibers/time-slicing', label: 'Time Slicing' },
       { href: '/fibers/priority-queues', label: 'Priority Queues' },
