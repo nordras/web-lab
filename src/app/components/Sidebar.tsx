@@ -36,6 +36,7 @@ const menuSections: MenuSection[] = [
       { href: '/css-components/trigonometry', label: 'Trigonometry' },
       { href: '/css-components/scss-mixins', label: 'SCSS Mixins & Functions' },
       { href: '/css-components/css-if-function', label: 'CSS if() Function' },
+      { href: '/css-components/fluid-typography', label: 'Fluid Typography (clamp)' },
     ]
   },
   {
