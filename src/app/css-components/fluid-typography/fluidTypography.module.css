@@ -1,0 +1,556 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: clamp(1rem, 3vw, 3rem);
+  background: var(--color-gray-50);
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.title {
+  /* Tipografia fluida usando clamp() */
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 800;
+}
+
+.subtitle {
+  /* Parágrafo fluido */
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--color-text-secondary);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  /* Padding fluido */
+  padding: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  box-shadow: var(--shadow-md);
+
+  & h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--color-text-primary);
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+    border-bottom: 3px solid var(--color-blue-500);
+    padding-bottom: var(--spacing-md);
+  }
+}
+
+.description {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  color: var(--color-text-secondary);
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  line-height: 1.8;
+}
+
+/* ============================================
+   BENEFITS GRID
+   ============================================ */
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-top: var(--spacing-xl);
+}
+
+.benefitCard {
+  background: var(--gradient-blue);
+  color: var(--color-white);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: clamp(8px, 1.5vw, 16px);
+  text-align: center;
+  transition: var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  & h3 {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    margin: var(--spacing-md) 0;
+  }
+
+  & p {
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+    margin: 0;
+    opacity: 0.9;
+  }
+}
+
+.benefitIcon {
+  font-size: clamp(2rem, 4vw, 3rem);
+  display: block;
+}
+
+/* ============================================
+   FLUID TEXT DEMO
+   ============================================ */
+
+.fluidTextDemo {
+  background: var(--color-gray-50);
+  padding: clamp(2rem, 5vw, 4rem);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.fluidHeading {
+  /* Heading que escala entre 1rem e 3rem */
+  font-size: clamp(1rem, 4vw, 3rem);
+  color: var(--color-blue-500);
+  margin: 0 0 var(--spacing-lg) 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.fluidParagraph {
+  /* Parágrafo que escala entre 0.875rem e 1.25rem */
+  font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 60ch;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   FLUID WIDTH DEMO
+   ============================================ */
+
+.fluidWidthDemo {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.fluidBox {
+  /* Largura fluida entre 300px e 800px */
+  width: clamp(300px, 50vw, 800px);
+  background: var(--gradient-purple);
+  color: var(--color-white);
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+
+  & p {
+    margin: 0;
+  }
+}
+
+/* ============================================
+   FLUID SPACING DEMO
+   ============================================ */
+
+.fluidSpacingDemo {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+}
+
+.fluidSpacingBox {
+  background: var(--gradient-pink-red);
+  color: var(--color-white);
+  /* Padding fluido entre 1rem e 4rem */
+  padding: clamp(1rem, 3vw, 4rem);
+  border-radius: var(--radius-md);
+  text-align: center;
+  max-width: 600px;
+
+  & p {
+    font-size: clamp(1.125rem, 2.5vw, 2rem);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-md) 0;
+  }
+
+  & span {
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-family: 'Courier New', monospace;
+    background: var(--color-overlay-white-20);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+  }
+}
+
+/* ============================================
+   MIN DEMO
+   ============================================ */
+
+.minDemo {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.minBox {
+  /* min() escolhe o menor valor */
+  width: min(600px, 100%);
+  background: var(--color-blue-500);
+  color: var(--color-white);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--radius-md);
+  text-align: center;
+
+  & p {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+
+  & span {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    opacity: 0.9;
+  }
+}
+
+/* ============================================
+   MAX DEMO
+   ============================================ */
+
+.maxDemo {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.maxBox {
+  width: min(600px, 100%);
+  /* max() escolhe o maior valor */
+  min-height: max(200px, 30vh);
+  background: var(--gradient-orange-yellow);
+  color: var(--color-dark-border);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--radius-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & p {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+
+  & span {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+}
+
+/* ============================================
+   FLUID GRID
+   ============================================ */
+
+.fluidGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  /* Gap fluido entre 1rem e 3rem */
+  gap: clamp(1rem, 2vw, 3rem);
+  margin-top: var(--spacing-xl);
+}
+
+.gridItem {
+  background: var(--gradient-blue);
+  color: var(--color-white);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: clamp(8px, 1.5vw, 16px);
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  min-height: clamp(100px, 15vh, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================
+   RADIUS DEMO
+   ============================================ */
+
+.radiusDemo {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.radiusBox {
+  width: min(500px, 100%);
+  background: var(--gradient-purple);
+  color: var(--color-white);
+  padding: clamp(2rem, 4vw, 3rem);
+  /* Border radius fluido */
+  border-radius: clamp(8px, 3vw, 32px);
+  text-align: center;
+
+  & p {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-sm) 0;
+  }
+
+  & span {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-family: 'Courier New', monospace;
+    background: var(--color-overlay-white-20);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+  }
+}
+
+/* ============================================
+   COMBINED DEMO
+   ============================================ */
+
+.combinedDemo {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.combinedBox {
+  /* Múltiplas propriedades fluidas */
+  width: clamp(300px, 60vw, 800px);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: var(--color-white);
+  border: 3px solid var(--color-blue-500);
+  border-radius: clamp(12px, 2vw, 24px);
+  box-shadow: var(--shadow-lg);
+
+  & h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    color: var(--color-blue-500);
+    margin: 0 0 var(--spacing-md) 0;
+  }
+
+  & p {
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.7;
+  }
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+.code {
+  background: var(--color-dark-border);
+  color: var(--color-text-muted);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+  line-height: 1.6;
+  margin: var(--spacing-lg) 0;
+}
+
+/* ============================================
+   COMPARISON SECTION
+   ============================================ */
+
+.comparisonSection {
+  background: var(--color-dark-bg);
+  color: var(--color-dark-text);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-xl);
+
+  & h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    border-bottom: 3px solid var(--color-blue-500);
+    padding-bottom: var(--spacing-md);
+    color: var(--color-dark-text);
+  }
+}
+
+.comparisonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.comparisonCard {
+  background: var(--color-white);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+
+  & h3 {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+  }
+
+  & pre {
+    background: var(--color-dark-border);
+    color: var(--color-text-muted);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+    font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+/* ============================================
+   FORMULA SECTION
+   ============================================ */
+
+.formulaSection {
+  background: var(--gradient-purple);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--spacing-xl);
+
+  & h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+  }
+}
+
+.formula {
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--radius-md);
+
+  & h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    text-align: center;
+    color: var(--color-blue-500);
+    margin-bottom: var(--spacing-xl);
+    font-family: 'Courier New', monospace;
+  }
+}
+
+.formulaSteps {
+  display: grid;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.step {
+  background: var(--color-gray-50);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--color-blue-500);
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+
+  & strong {
+    color: var(--color-blue-500);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+}
+
+.formulaExample {
+  background: var(--color-dark-border);
+  color: var(--color-white);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-md);
+
+  & p {
+    margin: 0 0 var(--spacing-md) 0;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    font-weight: 600;
+  }
+
+  & code {
+    display: block;
+    background: var(--color-overlay-white-10);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-lg);
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    color: var(--color-text-code);
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      padding: var(--spacing-sm) 0;
+      font-size: clamp(0.875rem, 1.3vw, 1rem);
+      border-bottom: 1px solid var(--color-overlay-white-10);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/* ============================================
+   TIPS SECTION
+   ============================================ */
+
+.tipsSection {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: var(--shadow-md);
+
+  & h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--color-text-primary);
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    border-bottom: 3px solid var(--color-success);
+    padding-bottom: var(--spacing-md);
+  }
+}
+
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.tip {
+  background: var(--color-gray-50);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-md);
+  border-top: 4px solid var(--color-success);
+
+  & h3 {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  & p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.7;
+
+    & code {
+      background: var(--color-overlay-black-10);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      font-family: 'Courier New', monospace;
+      color: var(--color-error);
+    }
+  }
+}
