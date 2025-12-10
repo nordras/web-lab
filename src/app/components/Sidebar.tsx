@@ -34,6 +34,8 @@ const menuSections: MenuSection[] = [
       { href: '/css-components/color-spaces', label: 'Color Spaces' },
       { href: '/css-components/view-transitions', label: 'View Transitions' },
       { href: '/css-components/trigonometry', label: 'Trigonometry' },
+      { href: '/css-components/scss-mixins', label: 'SCSS Mixins & Functions' },
+      { href: '/css-components/css-if-function', label: 'CSS if() Function' },
     ]
   },
   {
